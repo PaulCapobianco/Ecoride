@@ -2,26 +2,25 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>EcoRide — Mon profil</title>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <script defer type="module" src="assets/js/main.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script type="module" src="assets/js/main.js"></script>
 </head>
 <body>
   <?php require_once __DIR__ . '/includes/header.phtml'; ?>
-  <main class="page page-profile">
+  <main class="page page-profile" id="content">
     <section class="layout-container profile-wrap">
 
       <header class="profile-header">
         <div class="ph-left">
           <div class="profile-avatar" aria-hidden="true">
             <svg viewBox="0 0 24 24" role="img" aria-label="Utilisateur">
-              <path d="M12 12a4.5 4.5 0 1 0-4.5-4.5A4.5 4.5 0 0 0 12 12Z" fill="none" stroke="currentColor" stroke-width="2"/>
-              <path d="M4 20c0-3.9 3.8-6 8-6s8 2.1 8 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M12 12a4.5 4.5 0 1 0-4.5-4.5A4.5 4.5 0 0 0 12 12Z" fill="none" stroke="currentColor" stroke-width="2"></path>
+              <path d="M4 20c0-3.9 3.8-6 8-6s8 2.1 8 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
             </svg>
           </div>
           <div class="profile-id">
@@ -85,13 +84,13 @@
               </div>
               <p class="mb-2">Choisissez votre rôle principal.</p>
               <div class="role-switch-inline" role="radiogroup" aria-label="Rôle du compte">
-                <input type="radio" class="btn-check" name="role-inline" id="role2-passager" value="passenger" autocomplete="off" checked>
+                <input type="radio" class="btn-check" name="role-inline" id="role2-passager" value="passenger" checked>
                 <label class="btn btn-outline-success" for="role2-passager">Passager</label>
 
-                <input type="radio" class="btn-check" name="role-inline" id="role2-conducteur" value="driver" autocomplete="off">
+                <input type="radio" class="btn-check" name="role-inline" id="role2-conducteur" value="driver">
                 <label class="btn btn-outline-success" for="role2-conducteur">Conducteur</label>
 
-                <input type="radio" class="btn-check" name="role-inline" id="role2-both" value="both" autocomplete="off">
+                <input type="radio" class="btn-check" name="role-inline" id="role2-both" value="both">
                 <label class="btn btn-outline-success" for="role2-both">Les deux</label>
               </div>
             </div>
@@ -101,7 +100,6 @@
             <div class="card-body">
               <div class="card-title-row">
                 <h2 class="card-title mb-0">Préférences conducteur</h2>
-                <!-- ✨ Ajout : bouton “Ajouter une préférence” (placeholder, pas d’action pour le moment) -->
                 <div class="card-actions d-flex gap-2">
                   <a href="#section-preferences" class="btn btn-outline-secondary btn-sm">Modifier tout</a>
                   <button type="button" class="btn btn-success btn-sm" data-action="add-pref" aria-label="Ajouter une préférence">
@@ -137,8 +135,6 @@
                 <div class="vehicle-line"><span class="vehicle-label">Couleur</span><span class="vehicle-value">Bleu</span></div>
                 <div class="vehicle-line"><span class="vehicle-label">Places</span><span class="vehicle-value">4</span></div>
                 <div class="vehicle-line"><span class="vehicle-label">Immatriculation</span><span class="vehicle-value">AB-123-CD</span></div>
-
-                <!-- ✨ Ajout : Énergie (+ badge EcoRider si écologique) -->
                 <div class="vehicle-line">
                   <span class="vehicle-label">Énergie</span>
                   <span class="vehicle-value">
@@ -146,7 +142,6 @@
                     <span class="badge bg-success ms-2">EcoRider</span>
                   </span>
                 </div>
-
                 <div class="vehicle-line">
                   <span class="vehicle-label">Date 1<sup>ère</sup> immatriculation</span>
                   <span class="vehicle-value">12/05/2017</span>
